@@ -12,14 +12,15 @@ def push_Stack():
 
 
 def pop_Stack():
-    if not stack_empty():
+    if not len(Stack) == 0:
         print(f"{Stack.pop()} popped from stack..")
+        print(Stack)
     else:
         print("Stack is empty..")
 
 
 def peek_Stack():
-    if not stack_empty():
+    if len(Stack) != 0:
         print(f"Top element of stack is {Stack[-1]}")
     else:
         print("Stack is Empty")
